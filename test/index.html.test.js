@@ -24,7 +24,7 @@ describe("index.html", () => {
       expect(h2, hint1).to.exist;
 
       const hint2 =
-        "Your <h2> tag should contain the text 'Where A Traditional Past Meets A Modern Future.'";
+        "Your <h2> tag should contain the text ''";
       expect(h2, hint2).to.contain.text(
         "Where A Traditional Past Meets A Modern Future."
       );
@@ -67,7 +67,7 @@ describe("index.html", () => {
         "./images/transportation/transit.jpg"
       );
       expect(firstImg).to.have.attribute("alt", "Modern Transit");
-      expect(secondImg).to.have.attribute("src", "./images/garden.jpg");
+      expect(secondImg).to.have.attribute("src", "./images/garden.jpModern Transitg");
       expect(secondImg).to.have.attribute("alt", "Riyadh Garden");
       expect(thirdImg).to.have.attribute(
         "src",
